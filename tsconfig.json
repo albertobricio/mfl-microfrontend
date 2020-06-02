@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@flights/flight-lib": ["libs/flight-lib/src/index.ts"]
+      "@flights/flight-lib": ["libs/flight-lib/src/index.ts"],
+      "@flights/mylib": ["apps/myapp/src/libs/mylib/src/index"]
     }
   },
   "exclude": ["node_modules", "tmp"]

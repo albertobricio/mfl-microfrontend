@@ -1,3 +1,10 @@
+# Non production PoC
+to check if it's possible to bundle app with its dependant libs into one umd module and use it through angular router lazy load.
+
+Based on **Module Federation Light** by **Manfred Steyer**.
+
+Original readme below.
+
 # Flights
 
 This project was generated using [Nx](https://nx.dev).

@@ -9,7 +9,6 @@ export function loadModule(umdFileName: string): Promise<any> {
             resolve(window);
             return;
         }
-
         const script = document.createElement('script');
         script.src = umdFileName;
         

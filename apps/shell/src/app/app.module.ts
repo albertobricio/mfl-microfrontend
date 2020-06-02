@@ -13,13 +13,35 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       {
         path: '',
+        pathMatch: 'full',
         component: HomeComponent
       },
       {
         path: 'flights',
         loadChildren: () => loadModule('assets/flights-flight-lib.umd.min.js')
-                              .then(g => g.flights['flight-lib'].FlightLibModule)
-      }
+            .then(g => {
+              console.log('Loading flights');
+              return g.flights['flight-lib'].FlightLibModule;
+            })
+      },
+      {
+        path: 'myapp',
+        loadChildren: () => loadModule('assets/flights-myapp.umd.min.js')
+            .then(g => {
+                console.log('Loading flights');
+                console.log(g.flights);
+              return g.flights['myapp'].AppModule;
+            })
+      },
+    // {
+    //     path: 'mylib',
+    //     loadChildren: () => loadModule('assets/flights-mylibs.umd.min.js')
+    //         .then(g => {
+    //             console.log('Loading mylib');
+    //             console.log(g.flights);
+    //             return g.flights['mylibs'].MylibModule;
+    //         })
+    // }
     ])
   ],
   providers: [],
