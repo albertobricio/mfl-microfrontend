@@ -4,13 +4,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { SecondComponent } from './components/second/second.component';
-import { MylibModule } from "../libs/mylib/src/index";
+import { loadModule } from "./externals-utils";
 
 @NgModule({
   declarations: [AppComponent, SecondComponent],
   imports: [
     CommonModule,
-    MylibModule,
     RouterModule.forChild([{
       path: '',
       pathMatch: 'full',
@@ -21,9 +20,13 @@ import { MylibModule } from "../libs/mylib/src/index";
       component: SecondComponent,
     },
     {
-      path: 'mylib',
-      loadChildren: () => import('../libs/mylib/src/index').then(m => m.MylibModule)
-    }
+      path: 'myapp2',
+      loadChildren: () => loadModule('assets/flights-myapp2.umd.min.js')
+          .then(g => {
+            console.log('Loading myapp2');
+            console.log(g.flights);
+            return g.flights['myapp2'].AppModule;
+          })    }
       ])
   ],
   providers: [],

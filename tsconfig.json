@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@flights/flight-lib": ["libs/flight-lib/src/index.ts"],
-      "@flights/mylib": ["apps/myapp/src/libs/mylib/src/index"]
+      "@flights/mylib": ["libs/mylib/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

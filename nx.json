@@ -45,6 +45,13 @@
     },
     "mylib": {
       "tags": []
+    },
+    "myapp2": {
+      "tags": []
+    },
+    "myapp2-e2e": {
+      "tags": [],
+      "implicitDependencies": ["myapp2"]
     }
   }
 }
