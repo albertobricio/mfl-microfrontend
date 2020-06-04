@@ -21,7 +21,7 @@ import { loadModule } from "./externals-utils";
     },
     {
       path: 'myapp2',
-      loadChildren: () => loadModule('assets/flights-myapp2.umd.min.js')
+      loadChildren: () => loadModule('assets/myapp2/bundles/flights-myapp2.umd.min.js')
           .then(g => {
             console.log('Loading myapp2');
             console.log(g.flights);

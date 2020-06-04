@@ -1,6 +1,9 @@
 {
   "name": "@flights/myapp2",
   "version": "0.0.1",
+  "dependencies": {
+    "@flights/mylibs": "*"
+  },
   "peerDependencies": {
     "@angular/common": "^9.1.6",
     "@angular/core": "^9.1.6",

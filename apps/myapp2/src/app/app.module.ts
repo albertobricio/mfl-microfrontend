@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import {CommonModule} from "@angular/common";
+import { MylibModule, MylibComponent } from "../../../../libs/mylib/src";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MylibComponent],
   imports: [
     CommonModule,
+    MylibModule,
     RouterModule.forChild([
       {
         path: '',

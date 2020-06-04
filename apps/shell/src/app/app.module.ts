@@ -26,7 +26,7 @@ import { HomeComponent } from './home/home.component';
       },
       {
         path: 'myapp',
-        loadChildren: () => loadModule('assets/flights-myapp.umd.min.js')
+        loadChildren: () => loadModule('assets/myapp/bundles/flights-myapp.umd.min.js')
             .then(g => {
                 console.log('Loading flights');
                 console.log(g.flights);

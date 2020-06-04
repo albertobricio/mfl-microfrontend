@@ -1,0 +1,23 @@
+{
+  "name": "@flights/myapp",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^9.1.6",
+    "@angular/core": "^9.1.6"
+  },
+  "main": "bundles/flights-myapp.umd.js",
+  "module": "fesm5/flights-myapp.js",
+  "es2015": "fesm2015/flights-myapp.js",
+  "esm5": "esm5/flights-myapp.js",
+  "esm2015": "esm2015/flights-myapp.js",
+  "fesm5": "fesm5/flights-myapp.js",
+  "fesm2015": "fesm2015/flights-myapp.js",
+  "typings": "flights-myapp.d.ts",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+  }
+}

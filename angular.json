@@ -277,7 +277,7 @@
       "schematics": {}
     },
     "myapp": {
-      "projectType": "library",
+      "projectType": "application",
       "schematics": {},
       "root": "apps/myapp",
       "sourceRoot": "apps/myapp/src",
@@ -421,7 +421,7 @@
       "schematics": {}
     },
     "myapp2": {
-      "projectType": "library",
+      "projectType": "application",
       "schematics": {},
       "root": "apps/myapp2",
       "sourceRoot": "apps/myapp2/src",

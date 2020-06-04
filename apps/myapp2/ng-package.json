@@ -1,6 +1,7 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/libs/myapp2",
+  "dest": "../shell/src/assets/myapp2",
+  "whitelistedNonPeerDependencies": ["."],
   "lib": {
     "entryFile": "src/main.ts"
   }
